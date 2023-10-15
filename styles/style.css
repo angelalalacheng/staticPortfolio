@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Prompt", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  overflow-x: hidden;
+}
+body nav {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+body nav ul {
+  display: flex;
+}
+body nav ul li {
+  list-style-type: none;
+  margin: 1rem;
+}
+body nav ul li a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+body nav ul li a:hover {
+  color: #a573f5;
+}
+body main section.main-area {
+  min-height: 70vh;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+body main section.main-area div.info {
+  flex-basis: 450px;
+  padding: 1rem;
+}
+body main section.main-area div.info h1 {
+  font-size: 3.5rem;
+}
+body main section.main-area div.info h2 {
+  font-size: 2rem;
+}
+body main section.main-area div.info a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #a573f5;
+  padding: 0.25rem 0.5rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 2rem;
+  transition: all 0.1s ease;
+}
+body main section.main-area div.info a:hover {
+  color: black;
+}
+body main section.main-area div.image {
+  flex-basis: 450px;
+}
+body main section.main-area div.image img {
+  width: 100%;
+}
+body main section.about-me {
+  background-color: #ede1ff;
+  padding: 5rem 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body main section.about-me section.description {
+  width: 50%;
+  text-align: center;
+}
+body main section.about-me section.description h2 {
+  font-size: 2rem;
+}
+body main section.about-me section.description .skill {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  body nav {
+    position: static;
+  }
+  body nav ul {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 800px) {
+  body main section.about-me section.description {
+    width: 80%;
+  }
+}/*# sourceMappingURL=style.css.map */
